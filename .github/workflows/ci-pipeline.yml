@@ -26,11 +26,11 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
-      - name: Ejecutar pruebas UnitTest
-        run: python -m unittest discover -s test -v
-
       - name: Ejecutar pruebas Pytest
         run: python -m pytest tests -v
+
+      - name: Ejecutar pruebas UnitTest
+        run: python -m unittest discover -s test -v
 
   publicar:
     runs-on: ubuntu-latest
