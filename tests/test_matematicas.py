@@ -1,5 +1,5 @@
 def test_suma():
-    assert 5 + 5 == 10
+    assert 5 + 5 == 1
 
 
 def test_resta():
